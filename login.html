@@ -1,0 +1,39 @@
+<html>
+<title>
+Door to Digital Heaven
+</title>
+<body>
+<center><h1>Door open's only if you have the Username and Password</h1></center>
+<div>
+<p align="center">Admin Login</p>
+      Username: <input type="text" id="usname" required/><br/><br/>
+      Password:&nbsp; <input type="password" id="pass" required/>
+     <br/><br/>
+      <input type="button" id="btn" value="Login" onclick="button1();"><br>
+	  <br><a href onclick="change();" >Forgot Password</a>
+</div>
+<script type="text/javascript">
+function change()
+{
+alert("Password is 'admin'");
+}
+  function button1(){
+	var x=document.getElementById("usname").value;
+        var y=document.getElementById("pass").value;
+        if(x=='' || y=='')
+		{
+		alert("Enter Username or Password");
+		}
+		else{
+		if(x!="admin" || y!="admin")
+    	{
+    		alert("Username or Password is Incorrect");
+    	}
+    	else
+    	{
+    		alert("Successfully logged in");
+    	}}
+    }
+</script>
+</body>
+</html>
